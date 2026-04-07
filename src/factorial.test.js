@@ -55,3 +55,14 @@ test('factorial 20 = 2,432,902,008,176,640,000', () => {
   // Assert
   expect(result).toBe(2_432_902_008_176_640_000);
 }); 
+
+test('failed test check', () => {
+  // Arrange
+  const value = 3;
+
+  // Act
+  const result = factorial(value);
+
+  // Assert
+  expect(result).toBe(99999999);
+});
